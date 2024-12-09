@@ -3,6 +3,7 @@ require "replace"
 require "set"
 require "utils"
 require "cyl"
+require "copy"
 
 pos1 = nil
 pos2 = nil
@@ -22,5 +23,7 @@ function register()
 
     console.add_command("ve.id block_id:str", "Get block integer id by it string id.", get_int_id)
 
-    console.add_command("ve.selected_block", "Get the block under crosshair.", get_selected_block)
+    console.add_command("ve.copy", "Copy selected area with VoxelEdit", copy)
+    console.add_command("ve.cut", "Cut selected area with VoxelEdit", cut)
+    console.add_command("ve.paste", "Paste from copy buffer with VoxelEdit", paste)
 end

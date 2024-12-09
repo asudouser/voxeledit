@@ -25,12 +25,3 @@ function get_area_size()
 
     return size_x * size_y * size_z
 end
-
-blocks_history = {}
-
-function get_selected_block(args, kwargs)
-    local pid = hud.get_player();
-    local block = {player.get_selected_block(pid)}
-
-    debug.print(block) 
-end
