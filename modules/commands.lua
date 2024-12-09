@@ -23,5 +23,5 @@ function register()
 
     console.add_command("ve.id block_id:str", "Get block integer id by it string id.", get_int_id)
 
-    console.add_command("ve.save_area", "", save_area)
+    console.add_command("ve.selected_block", "Get the block under crosshair.", get_selected_block)
 end

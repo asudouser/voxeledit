@@ -6,7 +6,7 @@ function get_player_pos()
 end
 
 function get_int_id(args, kwargs)
-    return block.name(unpack(args))
+    return block.index(unpack(args))
 end
 
 function get_area_size()
@@ -24,4 +24,13 @@ function get_area_size()
     local size_z = z_max - z_min + 1
 
     return size_x * size_y * size_z
+end
+
+blocks_history = {}
+
+function get_selected_block(args, kwargs)
+    local pid = hud.get_player();
+    local block = {player.get_selected_block(pid)}
+
+    debug.print(block) 
 end
