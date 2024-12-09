@@ -3,7 +3,6 @@ require "replace"
 require "set"
 require "utils"
 require "cyl"
-require "undo"
 
 pos1 = nil
 pos2 = nil
